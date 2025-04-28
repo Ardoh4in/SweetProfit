@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Profit - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logoWhite.png" alt="Logo white SP">
+            <span>Sweet Profit</span>
+        </div>
+
+        <div class="menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Vendas</a>
+            <a href="#">Despesas</a>
+            <a href="#">Produtos</a>
+            <a href="#">Relatórios</a>
+        </div>
+
+        <div class="actions">
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+                <div class="notification-badge">0</div>
+                <div class="notification-dropdown">
+                    <div class="notification-header">
+                        <h3>Notificações</h3>
+                    </div>
+                    <div class="notification-content">
+                        <div class="empty-notifications">
+                            Não há notificações para ver
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="perfil">
+                <div class="perfil-info">
+                    <span class="nome">Vitória C.</span>
+                    <span class="cargo">Administradora</span>
+                  </div>
+                <img src="images/user.jpg" alt="Foto do Usuário">
+                <i class="fas fa-chevron-down seta"></i>
+
+                <div class="perfil-menu">
+                    <div class="perfil-header">
+                        <span>Logado:</span>
+                        <span class="perfil-email">vitoria.cristina@gmail.com</span>
+                    </div>
+                    <div class="perfil-item">
+                        <a href="#"></a><i class="fas fa-user"></i>
+                        <span>Meu perfil</span></a>
+                    </div>
+                    <div class="perfil-item">
+                        <a href="#"></a><i class="fas fa-cog"></i>
+                        <span>Configurações</span></a>
+                    </div>
+                    <div class="perfil-item">
+                        <a href="#"><i class="fas fa-headset"></i>
+                        <span>Suporte</span></a>
+                    </div>
+                    </a><div class="perfil-item sair">
+                        <a href="#"><i class="fas fa-sign-out-alt"></i>
+                        <span>Sair</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <section class="cabecalho">
+            <div>
+                <h1>Bem vinda, Vitória C.!</h1>
+                <p>Confira o desempenho da sua confeitaria hoje</p>
+            </div>
+            <button class="btn-novo-pedido">
+                <a href="#"><i class="fas fa-plus"></i> Novo Pedido</a>
+            </button>
+        </section>
+
+        <section class="cards">
+            <div class="card receita">
+                <h3>Receita Total</h3>
+                <p class="valor">R$ 0</p>
+                <p class="positivo"></p>
+                <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            
+            <div class="card despesas">
+                <h3>Despesas</h3>
+                <p class="valor">R$ 0</p>
+                <p class="negativo"></p>
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+            
+            <div class="card lucro">
+                <h3>Lucro Líquido</h3>
+                <p class="valor">R$ 0</p>
+                <p class="positivo"></p>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            
+            <div class="card pedidos">
+                <h3>Pedidos</h3>
+                <p class="valor">0</p>
+                <p class="positivo"></p>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </section>
+    </main>
+
+    <section class="graficos-produtos">
+        <div class="grafico-container">
+            <div class="grafico-header">
+                <h2>Receitas x Despesas</h2>
+                <div class="periodo-botoes">
+                    <button class="periodo-ativo">Semana</button>
+                    <button>Mês</button>
+                    <button>Ano</button>
+                </div>
+            </div>
+            <div class="grafico-placeholder">
+                <!-- Espaço para o gráfico (vai ser substituído pelo grráfico na hora de desenvolver o back) -->
+                <p>Área do gráfico será renderizada aqui</p>
+            </div>
+        </div>
+
+        <div class="produtos-container">
+            <h2>Produtos mais Vendidos</h2>
+            <div class="lista-produtos">
+                <div class="produto">
+                    <div class="produto-info">
+                        <span class="produto-nome">Bolo de Chocolate</span>
+                        <span class="produto-detalhes">0 vendas - R$ 0</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="produto">
+                    <div class="produto-info">
+                        <span class="produto-nome">Cupcakes (12 un)</span>
+                        <span class="produto-detalhes">0 vendas - R$ 0</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="produto">
+                    <div class="produto-info">
+                        <span class="produto-nome">Torta de Morango</span>
+                        <span class="produto-detalhes">0 vendas - R$ 0</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="produto">
+                    <div class="produto-info">
+                        <span class="produto-nome">Cookies (6 un)</span>
+                        <span class="produto-detalhes">0 vendas - R$ 0</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p>© 2025 Sweet Profit. Todos os direitos reservados.</p>
+            <div class="rodape-links">
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
