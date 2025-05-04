@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="../Css/registre.css" rel="stylesheet">
+    
+    <title>Cadastro - SweetProfit</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="../images/logo.png" alt="logo">
+        <h1>SweetProfit</h1>
+
+        <div class="container-box">
+            <h2>Crie sua conta</h2>
+
+            <form id="register">
+
+                <div class="input">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" required>
+                      <div class="idnd">
+                        <label for="cpf">CPF:</label>
+                        <input class="identidade" type="text" id="cpf" maxlength="14" placeholder="000.000.000-00" required>
+                    
+                        <label for="ocupacao">Ocupação/Cargo:</label>
+                        <input class="identidade" type="text" id="occupation" placeholder="Ex: Confeiteiro(a), Gerente..." required>
+                    </div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email" required>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="senha" required>
+
+                    <label for="confirma">Confirma senha:</label>
+                    <input type="password" id="confirm" placeholder="confirma senha" required>
+
+
+                </div>
+
+                <button>Cadastrar</button>
+
+            </form>
+            <p>Já tem uma conta? <a href="../Html/logo.html">Faça login</a></p>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="../script/registre.js"></script>
+
+</html>
